@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manshu Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(1, 1, 73);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(5, 5, 123);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: crimson;
+            font-size: 1.4rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            margin: 70px 0;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background-color: rgb(41, 1, 41);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .rightSection {
+            font-size: 20px;
+            width: 30%
+        }
+
+        .rightSection img {
+            width: 250px;
+            border-radius: 50%;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        #element {
+            color: blueviolet;
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2>Manshu's Portfolio</h2>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Service</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Manshu</span>
+                <div>and I am a passionate</div>
+
+                <span id="element"></span>
+                <div class="buttons">
+
+                    <button class="btn">Download resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="image/bg.png" alt="Profile Image">
+
+
+            </div>
+
+
+
+
+        </section>
+    </main>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Data Analyst'],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+</body>
+
+</html>
